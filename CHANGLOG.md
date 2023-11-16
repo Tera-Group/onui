@@ -1,11 +1,13 @@
 # Changelog
 
-### 1.0.0
+### 1.0.1
 
-| Package | Version |
-| ------- | ------- |
-| @on/ui  | 0.0.1   |
-| -       | -       |
+Changes:
+
+- Updated Readme
+- fixed: untitled-ui/icons-react
+
+### 1.0.0
 
 Changes:
 
