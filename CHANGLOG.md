@@ -1,5 +1,11 @@
 # Changelog
 
+### 1.0.2
+
+Changes:
+
+- Adjust switch styles
+
 ### 1.0.1
 
 Changes:

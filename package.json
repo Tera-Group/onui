@@ -76,5 +76,6 @@
   "directories": {
     "lib": "lib"
   },
-  "author": ""
+  "author": "Tera-Group",
+  "packageManager": "yarn@1.22.1"
 }
