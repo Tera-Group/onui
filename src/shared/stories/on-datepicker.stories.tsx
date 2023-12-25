@@ -14,7 +14,7 @@ export const Datepicker: StoryFn<typeof OnDatePickersRange> = () => {
         <OnDatePicker
             name='name-01'
             value=''
-            onChange={date => {
+            onChange={(date: any) => {
                 console.log(date)
             }}
         />
@@ -26,7 +26,7 @@ export const DateTimepicker: StoryFn<typeof OnDatePickersRange> = () => {
         <OnDatePicker
             name='name-01'
             value=''
-            onChange={date => {
+            onChange={(date: any) => {
                 console.log(date)
             }}
             showTimeSelect

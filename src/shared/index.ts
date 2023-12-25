@@ -1,14 +1,15 @@
-import OnDisplay from './on-display'
-import OnIcon from './on-icons'
-import OnLayout from './on-layout'
-import OnText from './on-text'
-import { OnSearchField } from './on-form'
-import OnFlexSingleRow from './on-flex-single-row'
-import OnPagination from './on-pagination'
-import ToastContainer, { onToast, onToastError, onToastInfo, onToastSuccess, onToastWarning } from './on-toast'
 import OnAlert from './on-alert'
+import OnCheckbox from './on-checkbox'
 import { OnHexColorPicker } from './on-colorful'
 import { OnDatePickersRange } from './on-datepicker'
+import OnDisplay from './on-display'
+import OnFlexSingleRow from './on-flex-single-row'
+import { OnSearchField } from './on-form'
+import OnIcon from './on-icons'
+import OnLayout from './on-layout'
+import OnPagination from './on-pagination'
+import OnText from './on-text'
+import ToastContainer, { onToast, onToastError, onToastInfo, onToastSuccess, onToastWarning } from './on-toast'
 
 export {
     /* Layout */
@@ -20,6 +21,7 @@ export {
     OnDisplay,
     OnText,
     /* Form */
+    OnCheckbox,
     OnSearchField,
     /* Table */
     OnPagination,

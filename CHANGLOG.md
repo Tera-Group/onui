@@ -5,6 +5,7 @@
 Changes:
 
 -   Adjust switch styles
+-   Add OnCheckbox component
 -   Add OnDatePicker component
 
 ### 1.0.1

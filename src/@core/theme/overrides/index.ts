@@ -32,6 +32,7 @@ import MuiMenu from './menu'
 
 // ** Overrides Inputs
 import MuiAutocomplete from './autocomplete'
+import MuiCheckbox from './checkbox'
 import MuiInputBase from './input-base'
 import MuiSwitch from './switch-button'
 
@@ -86,6 +87,7 @@ const overrides = (mode: Palette['mode']) => {
     const popper = MuiPopper()
     const paper = MuiPaper()
     const switchButton = MuiSwitch()
+    const checkbox = MuiCheckbox()
 
     return Object.assign(
         autocomplete,
@@ -94,6 +96,7 @@ const overrides = (mode: Palette['mode']) => {
         backdrop,
         button,
         circularProgress,
+        checkbox,
         chip,
         dataGrid,
         dialog,

@@ -28,6 +28,7 @@ const SwitchButton = () => {
                                 opacity: 1
                             },
                             '&.Mui-checked': {
+                                color: theme.palette.grey[50],
                                 '& + .MuiSwitch-track': {
                                     backgroundColor: theme.palette.successColor200.main
                                 }
