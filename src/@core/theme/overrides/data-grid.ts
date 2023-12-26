@@ -5,10 +5,14 @@ const DataGrid = () => {
     return {
         MuiDataGrid: {
             styleOverrides: {
-                root: ({ theme }: OwnerStateThemeType) => ({
+                root: ({ ownerState, theme }: OwnerStateThemeType) => ({
                     backgroundColor: theme.palette.common.white,
                     border: `1px solid ${theme.palette.grey[200]}`,
                     borderRadius: 8,
+                    ...(typeof ownerState.className === 'string' &&
+                        ownerState.className.includes('rounded-none') && {
+                            borderRadius: 0
+                        }),
                     boxShadow: '0px 2px 4px -2px rgba(16, 24, 40, 0.06), 0px 4px 8px -2px rgba(16, 24, 40, 0.10)',
                     '& .MuiDataGrid-withBorderColor': {
                         borderBottomColor: theme.palette.grey[200]

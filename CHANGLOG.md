@@ -1,5 +1,11 @@
 # Changelog
 
+### 1.0.3
+
+Changes:
+
+-   Adjust indeterminate icon for OnCheckbox
+
 ### 1.0.2
 
 Changes:

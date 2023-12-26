@@ -1,7 +1,7 @@
 import React from 'react'
 import { StoryFn, Meta } from '@storybook/react'
 import { DataGrid, GridColDef } from '@mui/x-data-grid'
-import { OnText } from '../../shared'
+import { OnCheckbox } from '../../shared'
 
 export default {
     title: 'MUI/Data Grid',
@@ -75,5 +75,16 @@ export const Playground: StoryFn<typeof DataGrid> = () => {
         setValue(newValue)
     }
 
-    return <DataGrid columns={columns} rows={rows} autoHeight={true} />
+    return (
+        <DataGrid
+            components={{
+                BaseCheckbox: OnCheckbox
+            }}
+            checkboxSelection={true}
+            columns={columns}
+            rows={rows}
+            autoHeight={true}
+            className='rounded-none'
+        />
+    )
 }
