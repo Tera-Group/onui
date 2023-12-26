@@ -1,6 +1,6 @@
 {
     "name": "@teravn/onui",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "main": "lib/cjs/index.js",
     "module": "lib/esm/index.js",
     "types": "lib/index.d.ts",
@@ -32,7 +32,7 @@
         "@babel/preset-react": "^7.22.5",
         "@babel/preset-typescript": "^7.22.5",
         "@mui/icons-material": "^5.14.3",
-        "@mui/x-data-grid": "^6.18.6",
+        "@mui/x-data-grid": "^6.11.1",
         "@rollup/plugin-commonjs": "^25.0.2",
         "@rollup/plugin-node-resolve": "^15.1.0",
         "@rollup/plugin-replace": "^5.0.2",

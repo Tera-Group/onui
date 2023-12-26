@@ -84,7 +84,6 @@ export const Playground: StoryFn<typeof DataGrid> = () => {
             columns={columns}
             rows={rows}
             autoHeight={true}
-            className='rounded-none'
         />
     )
 }
