@@ -1,7 +1,7 @@
 import OnAlert from './on-alert'
 import OnCheckbox from './on-checkbox'
 import { OnHexColorPicker } from './on-colorful'
-import { OnDatePickersRange } from './on-datepicker'
+import { OnDatePicker, OnDatePickersRange } from './on-datepicker'
 import OnDisplay from './on-display'
 import OnFlexSingleRow from './on-flex-single-row'
 import { OnSearchField } from './on-form'
@@ -37,5 +37,6 @@ export {
     /* ColorPicker */
     OnHexColorPicker,
     /* DatePicker */
+    OnDatePicker,
     OnDatePickersRange
 }
