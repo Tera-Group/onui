@@ -6,7 +6,8 @@ import {
     ButtonBase,
     Stack,
     TablePaginationProps,
-    TextField
+    TextField,
+    PaginationProps
 } from '@mui/material'
 import OnText from './on-text'
 
@@ -41,8 +42,12 @@ const Action: React.FC<ActionProps> = ({ visible, totalPage, onPageChange }) => 
 }
 
 const StyledBtn = styled(ButtonBase)(({ theme }) => ({
+    color: theme.palette.grey[600],
     padding: '10px 16px',
-    color: theme.palette.grey[600]
+    ':hover': {
+        color: theme.palette.primaryColor700.main,
+        textDecoration: 'underline'
+    }
 }))
 
 type OnPaginationBaseProps = Pick<
@@ -58,6 +63,7 @@ type OnPaginationBaseProps = Pick<
     | 'className'
 > & {
     showAction?: boolean
+    renderItem?: PaginationProps['renderItem']
 }
 
 export interface Props extends OnPaginationBaseProps {}
@@ -67,6 +73,7 @@ const OnPagination: React.FC<Props> = ({
     count,
     page,
     labelRowsPerPage,
+    renderItem,
     rowsPerPage = 10,
     rowsPerPageOptions = [10, 20, 30],
     showAction = true,
@@ -94,9 +101,11 @@ const OnPagination: React.FC<Props> = ({
                     if (canHideRowsPerPage) return null
 
                     return (
-                        <OnText size='sm' fontWeight='regular'>{`Dòng ${from}–${to} / ${
-                            count !== -1 ? count : `more than ${to}`
-                        }`}</OnText>
+                        <OnText size='sm' fontWeight='regular'>
+                            Dòng
+                            <OnText component='span' size='sm' fontWeight='semibold'>{` ${from} - ${to}`}</OnText>/
+                            {count !== -1 ? count : `more than ${to}`}
+                        </OnText>
                     )
                 }}
                 ActionsComponent={() => {
@@ -108,6 +117,7 @@ const OnPagination: React.FC<Props> = ({
                                 shape='rounded'
                                 count={Math.ceil(count / rowsPerPage)}
                                 page={page + 1}
+                                renderItem={renderItem}
                                 showFirstButton={showAction}
                                 showLastButton={showAction}
                                 onChange={(e: any, current: number) => onPageChange(e, current - 1)}

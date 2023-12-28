@@ -29,7 +29,10 @@ const Button = () => {
                 }),
                 contained: ({ theme }: OwnerStateThemeType) => ({
                     border: `1px solid ${theme.palette.common.black}`,
-                    boxShadow: '0px 1px 2px 0px rgba(16, 24, 40, 0.05)'
+                    boxShadow: '0px 1px 2px 0px rgba(16, 24, 40, 0.05)',
+                    ':hover': {
+                        boxShadow: '0px 1px 2px 0px rgba(16, 24, 40, 0.05)'
+                    }
                 }),
                 containedPrimary: ({ theme }: OwnerStateThemeType) => ({
                     borderColor: theme.palette.primaryColor500.main,

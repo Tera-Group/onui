@@ -1,5 +1,14 @@
 # Changelog
 
+### 1.0.4
+
+Changes:
+
+-   Adjust data grid's styles
+-   Adjust pagination's styles
+-   Override badge's styles
+-   Override menu's styles
+
 ### 1.0.3
 
 Changes:

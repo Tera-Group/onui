@@ -7,6 +7,7 @@ export {
     gridColumnPositionsSelector
 } from '@mui/x-data-grid'
 export type {
+    DataGridProps,
     GridCallbackDetails,
     GridColDef,
     GridRowId,

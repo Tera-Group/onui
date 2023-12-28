@@ -24,7 +24,8 @@ const generateCustomColors = (colors: Colors) => {
         ...colorRange2MuiPalette(colors.secondary, 'secondary'),
         ...colorRange2MuiPalette(colors.error, 'error'),
         ...colorRange2MuiPalette(colors.success, 'success'),
-        ...colorRange2MuiPalette(colors.warning, 'warning')
+        ...colorRange2MuiPalette(colors.warning, 'warning'),
+        ...colorRange2MuiPalette(colors.gray, 'gray')
     }
 }
 

@@ -6,7 +6,7 @@ const DataGrid = () => {
         MuiDataGrid: {
             styleOverrides: {
                 root: ({ theme }: OwnerStateThemeType) => ({
-                    backgroundColor: theme.palette.common.white,
+                    backgroundColor: theme.palette.grey[50],
                     border: `1px solid ${theme.palette.grey[200]}`,
                     borderRadius: 8,
                     boxShadow: '0px 2px 4px -2px rgba(16, 24, 40, 0.06), 0px 4px 8px -2px rgba(16, 24, 40, 0.10)',
@@ -47,7 +47,7 @@ const DataGrid = () => {
                     }
                 }),
                 columnHeader: ({ theme }: OwnerStateThemeType) => ({
-                    backgroundColor: theme.palette.grey[50],
+                    backgroundColor: theme.palette.grayColor25.main,
                     padding: '0 16px'
                 }),
                 columnHeaderTitle: ({ theme }: OwnerStateThemeType) => ({

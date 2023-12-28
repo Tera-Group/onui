@@ -20,6 +20,7 @@ import MuiToggleButton from './toggle-button'
 import MuiToggleButtonGroup from './toggle-button-group'
 import MuiCircularProgress from './circular-progress'
 import MuiChip from './chip'
+import MuiBadge from './badge'
 
 // ** Overrides Dialog
 import MuiDialog from './dialog'
@@ -59,65 +60,67 @@ import MuiPopper from './popper'
 import MuiAlert from './alert'
 
 const overrides = (mode: Palette['mode']) => {
-    const appbar = MuiAppBar()
     const alert = MuiAlert()
-    const backdrop = MuiBackdrop()
-    const button = MuiButton()
-    const iconButton = MuiIconButton()
-    const circularProgress = MuiCircularProgress()
-    const dialog = MuiDialog()
-    const modal = MuiModal()
-    const menu = MuiMenu()
-    const drawer = MuiDrawer()
-    const chip = MuiChip()
-    const dataGrid = MuiDataGrid()
-    const inputBase = MuiInputBase()
+    const appbar = MuiAppBar()
     const autocomplete = MuiAutocomplete()
-    const pagination = MuiPagination()
+    const backdrop = MuiBackdrop()
+    const badge = MuiBadge()
+    const button = MuiButton()
+    const circularProgress = MuiCircularProgress()
+    const chip = MuiChip()
+    const checkbox = MuiCheckbox()
+    const dataGrid = MuiDataGrid()
+    const dialog = MuiDialog()
     const divider = MuiDivider()
+    const drawer = MuiDrawer()
+    const iconButton = MuiIconButton()
+    const inputBase = MuiInputBase()
     const listItem = MuiListItem()
     const listItemButton = MuiListItemButton()
     const listItemIcon = MuiListItemIcon()
+    const menu = MuiMenu()
+    const modal = MuiModal()
+    const pagination = MuiPagination()
+    const paper = MuiPaper()
+    const popover = MuiPopover()
+    const popper = MuiPopper()
     const tableCell = MuiTableCell()
     const tabs = MuiTabs()
     const tab = MuiTab()
     const toggleButton = MuiToggleButton()
     const toggleButtonGroup = MuiToggleButtonGroup()
-    const popover = MuiPopover()
-    const popper = MuiPopper()
-    const paper = MuiPaper()
     const switchButton = MuiSwitch()
-    const checkbox = MuiCheckbox()
 
     return Object.assign(
         autocomplete,
-        appbar,
         alert,
+        appbar,
         backdrop,
+        badge,
         button,
         circularProgress,
         checkbox,
         chip,
         dataGrid,
         dialog,
-        modal,
-        menu,
+        divider,
         drawer,
         iconButton,
         inputBase,
+        menu,
+        modal,
         listItemButton,
         listItemIcon,
         listItem,
         pagination,
-        divider,
+        paper,
+        popover,
+        popper,
         tableCell,
         tabs,
         tab,
         toggleButton,
         toggleButtonGroup,
-        popover,
-        popper,
-        paper,
         switchButton
     )
 }

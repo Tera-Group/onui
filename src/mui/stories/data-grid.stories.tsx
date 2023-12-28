@@ -1,7 +1,8 @@
 import React from 'react'
 import { StoryFn, Meta } from '@storybook/react'
 import { DataGrid, GridColDef } from '@mui/x-data-grid'
-import { OnCheckbox } from '../../shared'
+import { OnCheckbox, OnIcon, OnPagination } from '../../shared'
+import { PaginationItem } from '@mui/material'
 
 export default {
     title: 'MUI/Data Grid',
@@ -75,10 +76,34 @@ export const Playground: StoryFn<typeof DataGrid> = () => {
         setValue(newValue)
     }
 
+    const datagridPagination = () => (
+        <OnPagination
+            count={100}
+            labelRowsPerPage='Số hàng trên mỗi trang'
+            page={0}
+            renderItem={item => (
+                <PaginationItem
+                    slots={{
+                        first: () => <OnIcon icon='align-left-01' />,
+                        previous: () => <OnIcon icon='arrow-left' />,
+                        next: () => <OnIcon icon='arrow-right' />,
+                        last: () => <OnIcon icon='align-right-01' />
+                    }}
+                    {...item}
+                />
+            )}
+            rowsPerPageOptions={[20, 40, 60, 80, 100]}
+            rowsPerPage={20}
+            onPageChange={() => {}}
+            onRowsPerPageChange={() => {}}
+        />
+    )
+
     return (
         <DataGrid
-            components={{
-                BaseCheckbox: OnCheckbox
+            slots={{
+                baseCheckbox: OnCheckbox,
+                pagination: datagridPagination
             }}
             checkboxSelection={true}
             columns={columns}

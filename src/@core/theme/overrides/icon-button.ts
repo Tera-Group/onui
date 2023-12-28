@@ -6,6 +6,7 @@ const IconButton = () => {
         MuiIconButton: {
             styleOverrides: {
                 root: ({ ownerState, theme }: OwnerStateThemeType) => ({
+                    padding: 10,
                     '&:hover': {
                         color: theme.palette.primaryColor500.main,
                         backgroundColor: 'transparent'

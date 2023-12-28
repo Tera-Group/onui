@@ -6,23 +6,23 @@ const Pagination = () => {
         MuiPaginationItem: {
             styleOverrides: {
                 root: ({ theme }: OwnerStateThemeType) => ({
-                    margin: 0,
-                    borderRadius: 0,
-
-                    color: theme.palette.grey[700],
                     border: `1px solid ${theme.palette.grey[300]}`,
+                    borderRadius: 0,
                     borderWidth: '1px 0',
-
+                    color: theme.palette.grey[700],
+                    fontWeight: 600,
+                    margin: 0,
                     '&.Mui-selected': {
-                        color: theme.palette.primaryColor500.main,
-                        backgroundColor: theme.palette.primaryColor50.main,
-                        fontWeight: 'bold',
+                        backgroundColor: theme.palette.primaryColor600.main,
+                        color: theme.palette.common.white,
                         '&:hover': {
-                            backgroundColor: theme.palette.primaryColor50.main
+                            backgroundColor: theme.palette.primaryColor600.main,
+                            color: theme.palette.common.white
                         }
                     },
                     '&:hover': {
-                        backgroundColor: theme.palette.primaryColor50.main
+                        backgroundColor: theme.palette.primaryColor600.main,
+                        color: theme.palette.common.white
                     }
                 }),
                 ellipsis: () => ({
