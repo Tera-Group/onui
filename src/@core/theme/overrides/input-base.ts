@@ -14,10 +14,15 @@ const InputBase = () => {
                     fontWeight: '400',
                     lineHeight: theme.spacing(3),
                     wordWrap: 'break-word',
+                    boxShadow: `${theme.spacing(0, 0.125, 0.25, 0)} ${hexToRGBA(theme.palette.grey[900], 0.05)}`,
 
                     '&.Mui-disabled': {
-                        background: theme.palette.grey[50],
-                        color: theme.palette.grey[500]
+                        background: theme.palette.grayColor25.main,
+                        borderColor: theme.palette.grey[200],
+                        '> input': {
+                            color: theme.palette.grey[400],
+                            '-webkit-text-fill-color': theme.palette.grey[400]
+                        }
                     },
                     '&.Mui-error': {
                         border: `1px solid ${theme.palette.errorColor300.main}`,
@@ -46,7 +51,8 @@ const InputBase = () => {
         MuiOutlinedInput: {
             styleOverrides: {
                 root: ({ theme }: OwnerStateThemeType) => ({
-                    paddingLeft: theme.spacing(1.5)
+                    paddingLeft: theme.spacing(1.5),
+                    borderRadius: theme.spacing(0.75)
                 }),
                 notchedOutline: () => ({
                     border: 'none'

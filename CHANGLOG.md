@@ -1,5 +1,11 @@
 # Changelog
 
+### 1.0.5
+
+Changes:
+
+-   Adjust input base styles
+
 ### 1.0.4
 
 Changes:
