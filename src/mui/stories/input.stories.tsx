@@ -31,6 +31,15 @@ export const Playground: StoryFn<typeof TextField> = () => (
                 <OnText>disabled:</OnText>
                 <TextField disabled value='kha hoang' />
             </Stack>
+            <Stack
+                direction='row'
+                justifyContent='space-between'
+                alignItems='center'
+                sx={{ marginBottom: 1 }}
+                spacing={1}>
+                <OnText>textarea:</OnText>
+                <TextField value='kha hoang' multiline minRows={4} maxRows={4} />
+            </Stack>
         </Grid>
     </Grid>
 )

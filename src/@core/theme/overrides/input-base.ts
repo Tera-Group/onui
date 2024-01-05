@@ -42,6 +42,11 @@ const InputBase = () => {
                     '&::placeholder': {
                         color: theme.palette.grey[300]
                     },
+                    '&.MuiInputBase-multiline': {
+                        paddingTop: 0,
+                        paddingRight: 0,
+                        paddingBottom: 0
+                    },
                     input: {
                         textOverflow: 'ellipsis'
                     }
