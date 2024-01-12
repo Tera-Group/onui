@@ -5,6 +5,7 @@
 Changes:
 
 -   Adjust input base styles
+-   Add customInput for datepicker
 -   Override textarea styles
 
 ### 1.0.4

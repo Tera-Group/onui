@@ -29,6 +29,7 @@ CustomInput.displayName = 'CustomDateInput'
 
 export interface Props extends ReactDatePickerProps {
     className?: string
+    customInput?: React.ReactNode
     disabled?: boolean
     name: string
     placeholder?: string
@@ -37,6 +38,7 @@ export interface Props extends ReactDatePickerProps {
 
 const OnDatePicker: React.FC<Props> = ({
     className,
+    customInput,
     name,
     placeholder,
     value,
@@ -62,7 +64,7 @@ const OnDatePicker: React.FC<Props> = ({
         <DatePickerContainer>
             <DatePicker
                 className={className}
-                customInput={<CustomInput />}
+                customInput={!customInput ? <CustomInput /> : customInput}
                 dateFormat={dateFormat}
                 disabled={disabled}
                 id='date-picker'
