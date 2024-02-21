@@ -20,6 +20,7 @@ export type ColorRange = {
 export type Colors = {
     base: BaseColor
     error: ColorRange
+    info: ColorRange
     gray: ColorRange
     primary: ColorRange
     secondary: ColorRange

@@ -23,6 +23,7 @@ const generateCustomColors = (colors: Colors) => {
         ...colorRange2MuiPalette(colors.primary, 'primary'),
         ...colorRange2MuiPalette(colors.secondary, 'secondary'),
         ...colorRange2MuiPalette(colors.error, 'error'),
+        ...colorRange2MuiPalette(colors.info, 'info'),
         ...colorRange2MuiPalette(colors.success, 'success'),
         ...colorRange2MuiPalette(colors.warning, 'warning'),
         ...colorRange2MuiPalette(colors.gray, 'gray')
@@ -47,7 +48,7 @@ const DefaultPalette = (mode: Palette['mode'], colors: Colors) => ({
         main: colors.warning[500]
     },
     info: {
-        main: colors.primary[500]
+        main: colors.info[500]
     },
     success: {
         main: colors.success[500]

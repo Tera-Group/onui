@@ -1,5 +1,11 @@
 # Changelog
 
+### 1.0.6
+
+Changes:
+
+-   Update color palette
+
 ### 1.0.5
 
 Changes:

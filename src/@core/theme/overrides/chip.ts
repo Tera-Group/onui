@@ -33,24 +33,45 @@ const Chip = () => {
                     backgroundColor: theme.palette.errorColor50.main,
                     '& .MuiChip-label, & .MuiChip-icon': {
                         color: theme.palette.errorColor700.main
+                    },
+                    '&:hover': {
+                        backgroundColor: theme.palette.errorColor100.main
+                    }
+                }),
+                colorInfo: ({ theme }: OwnerStateThemeType) => ({
+                    backgroundColor: theme.palette.infoColor50.main,
+                    '& .MuiChip-label, & .MuiChip-icon': {
+                        color: theme.palette.infoColor700.main
+                    },
+                    '&:hover': {
+                        backgroundColor: theme.palette.infoColor100.main
                     }
                 }),
                 colorPrimary: ({ theme }: OwnerStateThemeType) => ({
                     backgroundColor: theme.palette.primaryColor50.main,
                     '& .MuiChip-label, & .MuiChip-icon': {
                         color: theme.palette.primaryColor700.main
+                    },
+                    '&:hover': {
+                        backgroundColor: theme.palette.primaryColor100.main
                     }
                 }),
                 colorSuccess: ({ theme }: OwnerStateThemeType) => ({
                     backgroundColor: theme.palette.successColor50.main,
                     '& .MuiChip-label, & .MuiChip-icon': {
                         color: theme.palette.successColor700.main
+                    },
+                    '&:hover': {
+                        backgroundColor: theme.palette.successColor100.main
                     }
                 }),
                 colorWarning: ({ theme }: OwnerStateThemeType) => ({
                     backgroundColor: theme.palette.warningColor50.main,
                     '& .MuiChip-label, & .MuiChip-icon': {
                         color: theme.palette.warningColor700.main
+                    },
+                    '&:hover': {
+                        backgroundColor: theme.palette.warningColor100.main
                     }
                 }),
                 label: ({ theme }: OwnerStateThemeType) => ({

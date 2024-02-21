@@ -18,11 +18,12 @@ Playground.args = {
 
 export const Colors: StoryFn<typeof Chip> = () => (
     <Stack spacing={2} direction={'row'}>
-        <Chip color='default' label='default' icon={<CircleIcon />} />
-        <Chip color='primary' label='primary' icon={<CircleIcon />} />
-        <Chip color='error' label='error' icon={<CircleIcon />} />
-        <Chip color='success' label='success' icon={<CircleIcon />} />
-        <Chip color='warning' label='warning' icon={<CircleIcon />} />
+        <Chip color='default' label='default' icon={<CircleIcon />} onClick={() => {}} />
+        <Chip color='error' label='error' icon={<CircleIcon />} onClick={() => {}} />
+        <Chip color='info' label='info' icon={<CircleIcon />} onClick={() => {}} />
+        <Chip color='primary' label='primary' icon={<CircleIcon />} onClick={() => {}} />
+        <Chip color='success' label='success' icon={<CircleIcon />} onClick={() => {}} />
+        <Chip color='warning' label='warning' icon={<CircleIcon />} onClick={() => {}} />
     </Stack>
 )
 

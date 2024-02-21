@@ -66,6 +66,17 @@ declare module '@mui/material/styles' {
         grayColor700: { main: string }
         grayColor800: { main: string }
         grayColor900: { main: string }
+        infoColor25: { main: string }
+        infoColor50: { main: string }
+        infoColor100: { main: string }
+        infoColor200: { main: string }
+        infoColor300: { main: string }
+        infoColor400: { main: string }
+        infoColor500: { main: string }
+        infoColor600: { main: string }
+        infoColor700: { main: string }
+        infoColor800: { main: string }
+        infoColor900: { main: string }
     }
     interface PaletteOptions {
         primaryColor25?: { main: string }
@@ -134,6 +145,17 @@ declare module '@mui/material/styles' {
         grayColor700?: { main: string }
         grayColor800?: { main: string }
         grayColor900?: { main: string }
+        infoColor25?: { main: string }
+        infoColor50?: { main: string }
+        infoColor100?: { main: string }
+        infoColor200?: { main: string }
+        infoColor300?: { main: string }
+        infoColor400?: { main: string }
+        infoColor500?: { main: string }
+        infoColor600?: { main: string }
+        infoColor700?: { main: string }
+        infoColor800?: { main: string }
+        infoColor900?: { main: string }
     }
 }
 
