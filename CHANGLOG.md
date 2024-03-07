@@ -1,5 +1,11 @@
 # Changelog
 
+### 1.0.7
+
+Changes:
+
+-   Update OnDatePicker
+
 ### 1.0.6
 
 Changes:
