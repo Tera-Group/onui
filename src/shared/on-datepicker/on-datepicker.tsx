@@ -27,6 +27,7 @@ const CustomInput = React.forwardRef((props, ref) => {
 
 CustomInput.displayName = 'CustomDateInput'
 
+type DateType = Date | null | undefined
 export interface Props extends ReactDatePickerProps {
     className?: string
     customInput?: React.ReactNode
@@ -48,7 +49,7 @@ const OnDatePicker: React.FC<Props> = ({
     onChange,
     ...restProps
 }) => {
-    const [date, setDate] = React.useState(new Date())
+    const [date, setDate] = React.useState<DateType>(null)
 
     const handleChange = React.useCallback((newDate: any) => {
         onChange(newDate)
